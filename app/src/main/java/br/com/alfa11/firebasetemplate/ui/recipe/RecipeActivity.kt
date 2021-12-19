@@ -4,21 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import br.com.alfa11.firebasetemplate.R
-import br.com.alfa11.firebasetemplate.databinding.ActivityMainBinding
 import br.com.alfa11.firebasetemplate.databinding.ActivityRecipeBinding
-import com.google.firebase.firestore.FirebaseFirestore
-import androidx.annotation.NonNull
-import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ViewModelProvider
 import br.com.alfa11.firebasetemplate.data.Recipe
 import br.com.alfa11.firebasetemplate.viewmodel.RecipeViewModel
-
-import com.google.android.gms.tasks.OnFailureListener
-
-import com.google.firebase.firestore.DocumentReference
-
-import com.google.android.gms.tasks.OnSuccessListener
 import java.util.*
 
 

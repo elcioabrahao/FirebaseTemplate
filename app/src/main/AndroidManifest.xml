@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirebaseTemplate">
         <activity
-            android:name=".ui.ingredient.IngredientDetailActivity"
+            android:name=".ui.ingredient.IngredientListActivity"
             android:exported="true" />
         <activity
             android:name=".ui.recipe.RecipeListActivity"

@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.alfa11.firebasetemplate.databinding.ActivityMainBinding
 import br.com.alfa11.firebasetemplate.ui.ingredient.IngredientActivity
-import br.com.alfa11.firebasetemplate.ui.ingredient.IngredientDetailActivity
+import br.com.alfa11.firebasetemplate.ui.ingredient.IngredientListActivity
 import br.com.alfa11.firebasetemplate.ui.recipe.RecipeActivity
 import br.com.alfa11.firebasetemplate.ui.recipe.RecipeListActivity
 
@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.listIngredients.setOnClickListener {
-            val intent = Intent(this, IngredientDetailActivity::class.java)
+            val intent = Intent(this, IngredientListActivity::class.java)
             startActivity(intent)
         }
     }

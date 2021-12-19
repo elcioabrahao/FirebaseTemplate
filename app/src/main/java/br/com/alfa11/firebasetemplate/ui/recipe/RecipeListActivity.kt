@@ -9,7 +9,7 @@ class RecipeListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recipe_list)
 
-        if(savedInstanceState == null) { // initial transaction should be wrapped like this
+        if(savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.recipe_container, RecipeListFragment())
                 .commitAllowingStateLoss()

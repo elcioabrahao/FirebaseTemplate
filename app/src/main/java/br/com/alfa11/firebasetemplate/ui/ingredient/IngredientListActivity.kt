@@ -4,14 +4,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.alfa11.firebasetemplate.R
 
-class IngredientDetailActivity : AppCompatActivity() {
+class IngredientListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ingredient_detail)
 
-        if(savedInstanceState == null) { // initial transaction should be wrapped like this
+        if(savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.ingredient_container, IngredientFragment())
+                .replace(R.id.ingredient_container, IngredientListFragment())
                 .commitAllowingStateLoss()
         }
     }

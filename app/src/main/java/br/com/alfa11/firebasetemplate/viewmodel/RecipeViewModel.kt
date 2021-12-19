@@ -3,11 +3,9 @@ package br.com.alfa11.firebasetemplate.viewmodel
 
 import android.app.Application
 import android.util.Log
-import android.widget.Toast
 import androidx.lifecycle.*
 import br.com.alfa11.firebasetemplate.data.Recipe
 import br.com.alfa11.firebasetemplate.data.RecipeResponse
-import br.com.alfa11.firebasetemplate.ui.recipe.RecipeActivity
 import com.google.firebase.firestore.FirebaseFirestore
 
 
@@ -47,6 +45,7 @@ class RecipeViewModel(application: Application) : AndroidViewModel(application) 
                     }
                 }
                 Log.d("RecipeViewModel","ta: "+recipes!!.size)
+                Log.d("RecipeViewModel","Description: "+recipes!!.get(0).description)
                 recipeResponse.recipes = recipes
                 mRecipeResponse.value = recipeResponse
             }

@@ -1,21 +1,24 @@
-package br.com.alfa11.firebasetemplate.ui.recipe.adapter
+package br.com.alfa11.firebasetemplate.ui.ingredient.adapter
 
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import br.com.alfa11.firebasetemplate.R
+import br.com.alfa11.firebasetemplate.data.Ingredient
 import br.com.alfa11.firebasetemplate.data.Recipe
 
-class RecipeViewHolder(itemView: View, private val listener: RecipeListener) :
+class IngredientViewHolder(itemView: View, private val listener: IngredientListener) :
     RecyclerView.ViewHolder(itemView) {
-  fun bind(recipe: Recipe) {
+  fun bind(ingredient: Ingredient) {
 
-    val textDescription = itemView.findViewById<TextView>(R.id.recipe_description)
+    val textDescription = itemView.findViewById<TextView>(R.id.ingredient_description)
+    val textImageUrl = itemView.findViewById<TextView>(R.id.ingredient_image)
 
-        textDescription.text = recipe.description
+        textDescription.text = ingredient.description
+      textImageUrl.text = ingredient.image
 
         textDescription.setOnClickListener {
-            listener.onClick(recipe.id)
+            listener.onClick(ingredient.id)
         }
 
         // Atribui eventos
