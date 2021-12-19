@@ -10,10 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirebaseTemplate">
         <activity
+            android:name=".ui.ingredient.IngredientDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.recipe.RecipeListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.ingredient.IngredientActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.recipe.RecipeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.registeruser.RegisterUserActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.login.LoginActivity"
             android:exported="true"
-            android:label="@string/title_activity_login" >
-
+            android:label="@string/title_activity_login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
